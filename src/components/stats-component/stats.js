@@ -14,7 +14,8 @@ const Stats = () => {
     <div className="message">
       <span>
         💼 You have {dataBase.length} items on your list, and you already packed{" "}
-        {dataPackedLength} ({packedPercent(dataBase.length, dataPackedLength)}%)
+        {dataPackedLength} (
+        {Math.floor(packedPercent(dataBase.length, dataPackedLength))}%)
       </span>
     </div>
   );
