@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 30px;
+    align-items: center;
+    background-color: rgb(255, 136, 0);
+    /* font-family: Satisfy, cursive; */
+    font-family: Architects Daughter, cursive;
+    width: 100%;
+}
+
+.logo img {
+    width: 70px;
+}
+
+.logo h1 {
+    font-size: 250%;
+}

@@ -1,0 +1,34 @@
+.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    background-color: rgb(229, 119, 31);
+    padding: 15px;
+}
+
+.form p {
+    font-weight: bold;
+    color: rgb(60, 60, 60);
+}
+
+.form .counter-input,
+.form .item-input {
+    background-color: #ffebb3;
+}
+
+.form .add-btn {
+    background-color: #76c7ad;
+}
+
+.form .counter-input,
+.form .add-btn,
+.form .item-input {
+    padding: 10px 25px;
+    font-size: 120%;
+    border: none;
+    border-radius: 30px;
+    font-weight: 700;
+    color: rgb(60, 60, 60);
+}

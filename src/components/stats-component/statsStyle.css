@@ -1,0 +1,12 @@
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #76c7ad;
+    padding: 20px;
+}
+
+.message span {
+    font-size: 140%;
+    font-weight: 500;
+}
