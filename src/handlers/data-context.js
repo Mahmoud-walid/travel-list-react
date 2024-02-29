@@ -4,6 +4,7 @@ import { DataContext } from "./input-handlers";
 export const DataProvider = ({ children }) => {
   const [dataBase, setDataBase] = useState([]);
   const [dataPacked, setDataPacked] = useState([]);
+  const [sortOption, setSortOption] = useState("");
   // const dataPacked = dataBase.filter((ele) => ele.packed === true);
 
   const updateDataPacked = (newDataPacked) => {
@@ -16,7 +17,14 @@ export const DataProvider = ({ children }) => {
 
   return (
     <DataContext.Provider
-      value={{ dataBase, updateDataBase, dataPacked, updateDataPacked }}
+      value={{
+        dataBase,
+        updateDataBase,
+        dataPacked,
+        updateDataPacked,
+        sortOption,
+        setSortOption,
+      }}
     >
       {children}
     </DataContext.Provider>

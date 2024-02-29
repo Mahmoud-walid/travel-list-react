@@ -11,7 +11,7 @@ const TaskItem = (props) => {
     if (!isChecked) {
       updateDataPacked(dataPacked.concat(props.dataBase));
     } else {
-      updateDataPacked(dataPacked.filter(item => item !== props.dataBase));
+      updateDataPacked(dataPacked.filter((item) => item !== props.dataBase));
     }
   };
   return (
