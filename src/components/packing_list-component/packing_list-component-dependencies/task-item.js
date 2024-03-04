@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import { DataContext } from "../../../handlers/input-handlers";
 
 const TaskItem = (props) => {
-  const [isChecked, setIsChecked] = useState(false);
+  const [isChecked, setIsChecked] = useState(props.dataBase.packed || false); // this is important ＞﹏＜ to sorting
   const { dataPacked, updateDataPacked } = useContext(DataContext);
 
   const changeHandler = () => {
@@ -22,6 +22,7 @@ const TaskItem = (props) => {
         }}
         type="checkbox"
         name="task-item"
+        checked={props.dataBase.packed || false} // this is important ＞﹏＜ to sorting
       />
       <span style={{ textDecoration: isChecked ? "line-through" : "" }}>
         {props.dataBase.count} {props.dataBase.item}
